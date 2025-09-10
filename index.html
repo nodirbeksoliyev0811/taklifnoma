@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
   <link rel="stylesheet" type="text/css" href="css/menikah.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-  <script src="https://kit.fontawesome.com/2828f7885a.js"
+  <!-- <script src="https://kit.fontawesome.com/2828f7885a.js"
     integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/jquery.coundown.js"></script>
   <link rel="icon" type="image/png" href="image/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
   <!-- Begin Script for Countdown -->
@@ -47,246 +49,272 @@
       <img src="image/favicon.png" alt="Flower" />
     </div>
   </div>
-  <!-- End Preloader-->
-  <!-- Begin Header -->
-  <div class="header-wrapper" id="home">
-    <!-- Begin Hero -->
-    <section class="hero is-large">
-      <!-- End Mobile Nav -->
-      <!-- Begin Hero Content-->
-      <div class="container has-text-centered">
-        <h4 class="invitation">Taklifnoma</h4>
-        <h1 class="subtitle: welcome">Assalomu alaykum, aziz mehmonimiz!
-          Sizni farzandlarimiz</h1>
-        <h2 class="title">Xurshidbek va Masturaxon</h2>
-        <h4 class="subtitle welcome">
-          larning "Nikoh" to‘ylari munosabati bilan fayzli to'y dasturxonimizga taklif
-          etamiz.<br />Hurmat bilan, Umidjon Yuldashevlar oilasi
-        </h4>
-      </div>
-      <!-- Start Countdown -->
-      <div>
-        <ul id="hitungmundur">
-          <li><span class="days">00</span>
-            <p class="days_text">Kun</p>
-          </li>
-          <li class="separator">:</li>
-          <li><span class="hours">00</span>
-            <p class="hours_text">Soat</p>
-          </li>
-          <li class="separator">:</li>
-          <li><span class="minutes">00</span>
-            <p class="minutes_text">Daqiqa</p>
-          </li>
-          <li class="separator">:</li>
-          <li><span class="seconds">00</span>
-            <p class="seconds_text">Soniya</p>
-          </li>
-        </ul>
-        <div class="spasi">
-        </div>
-        <script type="text/javascript">
-          var now = new Date();
-          var day = now.getDate();
-          var month = now.getMonth() + 1;
-          var year = now.getFullYear() + 1;
 
-          var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-          var harih = '10/07/2025 06:00:00';
-
-          $('#hitungmundur').countdown({
-            date: harih,
-            offset: +7,
-            day: 'Kun',
-            days: 'Kun'
-          }, function () { alert('Tadbir boshlandi!'); });
-        </script>
-      </div>
-      <!-- End Hero Content-->
-      <!-- Begin Hero Menu -->
-      <div class="hero-foot ">
-        <div class="hero-foot--wrapper">
-          <div class="columns">
-            <div class="column is-12 hero-menu-desktop has-text-centered">
-              <ul>
-                <li>
-                  <a href="#Waktu">7-sentabr 2025</a>
-                </li>
-                <li>
-                  <a href="#lokasi">Manzil: Quva, Otabek to'yxonasi</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Hero Menu -->
-    </section>
-    <!-- End Hero -->
-  </div>
-  <!-- End Header -->
-
-  <!-- Begin Main Content -->
-  <div class="main-content">
-    <!-- Begin regular-section-->
-    <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
-      id="regular-section">
-
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
-      </div>
-
-      <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-        Assalomu alaykum va rohmatullohi va barokatuh.
-        <br />
-        Alloh taoloning rahmati va roziligi ila,
-        <br />
-        ikki yoshga baxt va saodat tilaymiz.
-      </p>
-
-      <span class="space40px"></span>
-      <span class="space40px"></span>
-
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="nama-lengkap">
-          Xurshidbek
-        </div>
-        <div class="ampersand">&</div>
-        <div class="nama-lengkap">
-          Masturaxon
-        </div>
-
-      </div>
-      <span class="space40px"></span>
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-      </div>
-    </section>
-    <!-- End regular-section-->
-
-    <!-- Begin Waktu Section -->
-    <section class="section-dark" id="Waktu">
-      <div class="container">
-
-        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">To'y sanasi</h1>
-        </div>
-        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-          <div class="column is-4 has-vertically-aligned-content">
-            <p class="is-larger has-text-centered">
-            <div class="waktu tanggal-hari has-text-centered">Seshanba</div>
-            <div class="waktu tanggal-angka has-text-centered">7</div>
-            <div class="waktu tanggal-bulan has-text-centered">Oktabr 2025</div>
-            </p>
-          </div>
-          <div class="column is-4 has-vertically-aligned-content">
-            <p class="is-larger has-text-centered">
-            <div class="waktu tanggal-hari has-text-centered">Erkaklarga</div>
-            <div class="waktu tanggal-angka has-text-centered">06:00</div>
-            </p>
-          </div>
-          <div class="column is-4 has-vertically-aligned-content">
-            <p class="is-larger has-text-centered">
-            <div class="waktu tanggal-hari has-text-centered">Ayollarga</div>
-            <div class="waktu tanggal-angka has-text-centered">10:00</div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Waktu Content -->
-
-    <!-- Begin Lokasi Section -->
-    <section class="section-darker" id="lokasi">
-      <div class="container">
-        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h2 class="title has-text-centered section-title">Manzil</h2>
-          <p class="tempat is-larger has-text-centered">
-            <strong>Farg'ona viloyati, Quva tumani - Otabek to‘yxonasi</strong>
-            <br>
-            <a href="https://maps.app.goo.gl/gXmWE8DDK9q5Sc78A">Qayqubbod ko'chasi, 174-uy</a>,
-            <br>
-            Mo'ljal: Beeline Savdo Ofisi ro'parasida
-            <br>
-          </p>
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1235.1804293505052!2d72.06893792571464!3d40.52445817000616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc8709f0f85dd3%3A0x561e10a73a6ff2c1!2sOtabek%20to%E2%80%98yxonasi!5e0!3m2!1suz!2s!4v1757359858607!5m2!1suz!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" width="400" height="300" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" style="border:0;" allowfullscreen>
-              </iframe>
-            </figure>
-          </section>
-        </div>
-      </div>
-    </section>
-    <!-- End Lokasi Content -->
-
-    <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-    <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column has-text-centered is-12 prolog">
-            <!-- <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang
-              [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1> -->
-            <!-- IMAGES -->
-            <div class=" tile">
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-                  </article>
-                </div>
-              </div>
-            </div>
-            <div class="space24px"></div>
-            <!-- <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-            </div> -->
-            <!-- IMAGES -->
-            <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div>
-            <div class="space40px"></div>
-            <div class="space40px"></div>
-
-          </div>
-        </div>
-    </section>
-    <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-  </div>
-  <!-- End Main Content -->
-
-  <!-- Begin Footer -->
-  <div class="footer">
+  <div id="welcome-screen">
     <div class="container">
-      <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
-        <p class="has-vertically-align">2025 &copy</p>
-      </a>
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Taklifnoma</strong>
+              <p>Xurshidbek & Masturaxon to‘yiga taklif etamiz 💌</p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
     </div>
   </div>
-  <!-- End Footer -->
+  <!-- End Preloader-->
+  <div id="main-content" style="display:none;">
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="container has-text-centered">
+          <h4 class="invitation">Taklifnoma</h4>
+          <h1 class="subtitle: welcome">Assalomu alaykum, aziz mehmonimiz!
+            Sizni farzandlarimiz</h1>
+          <h2 class="title">Xurshidbek va Masturaxon</h2>
+          <h4 class="subtitle welcome">
+            larning "Nikoh" to‘ylari munosabati bilan fayzli to'y dasturxonimizga taklif
+            etamiz.<br />Hurmat bilan, Umidjon Yuldashevlar oilasi
+          </h4>
+        </div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span>
+              <p class="days_text">Kun</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span>
+              <p class="hours_text">Soat</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span>
+              <p class="minutes_text">Daqiqa</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span>
+              <p class="seconds_text">Soniya</p>
+            </li>
+          </ul>
+          <div class="spasi">
+          </div>
+          <script type="text/javascript">
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+
+            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var harih = '10/07/2025 06:00:00';
+
+            $('#hitungmundur').countdown({
+              date: harih,
+              offset: +7,
+              day: 'Kun',
+              days: 'Kun'
+            }, function () { alert('Tadbir boshlandi!'); });
+          </script>
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li>
+                    <a href="#Waktu">7-sentabr 2025</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Manzil: Quva, Otabek to'yxonasi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin regular-section-->
+      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+        id="regular-section">
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        </div>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Assalomu alaykum va rohmatullohi va barokatuh.
+          <br />
+          Alloh taoloning rahmati va roziligi ila,
+          <br />
+          ikki yoshga baxt va saodat tilaymiz.
+        </p>
+
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap">
+            Xurshidbek
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+            Masturaxon
+          </div>
+
+        </div>
+        <span class="space40px"></span>
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div>
+      </section>
+      <!-- End regular-section-->
+
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">To'y sanasi</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div class="column is-4 has-vertically-aligned-content">
+              <p class="is-larger has-text-centered">
+              <div class="waktu tanggal-hari has-text-centered">Seshanba</div>
+              <div class="waktu tanggal-angka has-text-centered">7</div>
+              <div class="waktu tanggal-bulan has-text-centered">Oktabr 2025</div>
+              </p>
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+              <p class="is-larger has-text-centered">
+              <div class="waktu tanggal-hari has-text-centered">Erkaklarga</div>
+              <div class="waktu tanggal-angka has-text-centered">06:00</div>
+              </p>
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+              <p class="is-larger has-text-centered">
+              <div class="waktu tanggal-hari has-text-centered">Ayollarga</div>
+              <div class="waktu tanggal-angka has-text-centered">10:00</div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi">
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h2 class="title has-text-centered section-title">Manzil</h2>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Farg'ona viloyati, Quva tumani - Otabek to‘yxonasi</strong>
+              <br>
+              <a href="https://maps.app.goo.gl/gXmWE8DDK9q5Sc78A">Qayqubbod ko'chasi, 174-uy</a>,
+              <br>
+              Mo'ljal: Beeline Savdo Ofisi ro'parasida
+              <br>
+            </p>
+            <section class="mapbox" data-mapbox>
+              <figure>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1235.1804293505052!2d72.06893792571464!3d40.52445817000616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc8709f0f85dd3%3A0x561e10a73a6ff2c1!2sOtabek%20to%E2%80%98yxonasi!5e0!3m2!1suz!2s!4v1757359858607!5m2!1suz!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" width="400" height="300" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" style="border:0;" allowfullscreen>
+                </iframe>
+              </figure>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column has-text-centered is-12 prolog">
+              <!-- <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang
+              [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1> -->
+              <!-- IMAGES -->
+              <div class=" tile">
+                <div class="tile is-ancestor">
+                  <div class="tile is-parent">
+                    <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="space24px"></div>
+              <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+                  </article>
+                </div>
+              </div>
+              <!-- IMAGES -->
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <div class="space40px"></div>
+
+            </div>
+          </div>
+      </section>
+      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
+          <p class="has-vertically-align">2025 &copy</p>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <audio id="bg-music" src="music.mp3" autoplay muted loop></audio>
+    <button id="music-btn"><i id="music-icon" class="fa fa-play"></i></button>
+  </div>
+
+  <!-- <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    <source src="music.ogg" type="audio/ogg">
+    Sizning brauzeringiz audio qo‘llab-quvvatlamaydi.
+  </audio>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -294,10 +322,7 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      easing: "ease-out",
-      duration: 800,
-    });
+    AOS.init({ easing: "ease-out", duration: 800 });
   </script>
 </body>
 

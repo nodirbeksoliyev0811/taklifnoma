@@ -615,7 +615,7 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_1.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -624,7 +624,7 @@ body.preloader-site {
 
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_2.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -632,7 +632,7 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_3.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_3.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -640,7 +640,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-lamaran.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_4.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -648,7 +648,7 @@ body.preloader-site {
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-red-car.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_5.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -657,7 +657,7 @@ body.preloader-site {
 
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-engagement-ami.jpg");
+  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/image_6.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -701,4 +701,157 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #BC8887;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  transition: background 0.3s;
+}
+
+#music-btn:hover {
+  background: #9c6d6c;
+}
+
+#welcome-screen {
+  background: #996E6D;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#welcome-screen body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #996E6D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-screen .container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#welcome-screen .container>.envelope-wrapper {
+  background: #f5edd1;
+  border-radius: 5%;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+#welcome-screen .envelope-wrapper>.envelope {
+  position: relative;
+  width: 300px;
+  height: 230px;
+}
+
+#welcome-screen .envelope-wrapper>.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border-radius: 6%;
+  border-top: 130px solid #ecdeb8;
+  border-right: 150px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: all 0.5s ease-in-out 0.7s;
+}
+
+#welcome-screen .envelope-wrapper>.envelope::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  border-radius: 5%;
+  border-top: 130px solid transparent;
+  border-right: 150px solid #e6cfa7;
+  border-bottom: 100px solid #e6cfa7;
+  border-left: 150px solid #e6cfa7;
+}
+
+#welcome-screen .envelope>.letter {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  width: 54%;
+  height: 80%;
+  background: #fff;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+}
+
+#welcome-screen .envelope>.letter>.text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #444;
+  text-align: left;
+  font-size: 10px;
+}
+
+#welcome-screen .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background: rgb(252, 8, 8);
+  z-index: 4;
+  transform: translate(-50%, -20%) rotate(45deg);
+  transition: transform 0.5s ease-in-out 1s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#welcome-screen .heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(252, 8, 8);
+  border-radius: 50%;
+}
+
+#welcome-screen .heart:before {
+  top: -14px;
+}
+
+#welcome-screen .heart:after {
+  right: 14px;
+}
+
+#welcome-screen .flap>.envelope:before {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+#welcome-screen .flap>.envelope>.letter {
+  bottom: 100px;
+  transform: scale(1.5);
+  transition-delay: 1s;
+}
+
+#welcome-screen .flap>.heart {
+  transform: rotate(90deg);
+  transition-delay: 0.4s;
 }

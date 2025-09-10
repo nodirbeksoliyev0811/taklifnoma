@@ -1,20 +1,16 @@
-// Get that hamburger menu cookin' //
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Get all "navbar-burger" elements
+// Navbar burger toggle
+document.addEventListener("DOMContentLoaded", function () {
   var $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
     0
   );
-  // Check if there are any navbar burgers
+
   if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach(function($el) {
-      $el.addEventListener("click", function() {
-        // Get the target from the "data-target" attribute
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener("click", function () {
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
-        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+
         $el.classList.toggle("is-active");
         $target.classList.toggle("is-active");
       });
@@ -22,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-// Smooth Anchor Scrolling
-$(document).on("click", 'a[href^="#"]', function(event) {
+// Smooth scrolling for anchors
+$(document).on("click", 'a[href^="#"]', function (event) {
   event.preventDefault();
   $("html, body").animate(
     {
@@ -33,25 +29,78 @@ $(document).on("click", 'a[href^="#"]', function(event) {
   );
 });
 
-// When the user scrolls down 20px from the top of the document, show the scroll up button
-window.onscroll = function() {
-  scrollFunction();
-};
+// Scroll-to-top button
+window.addEventListener("scroll", function () {
+  let btn = document.getElementById("toTop");
+  if (!btn) return;
 
-function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("toTop").style.display = "block";
+    btn.style.display = "block";
   } else {
-    document.getElementById("toTop").style.display = "none";
+    btn.style.display = "none";
   }
+});
+
+$(document).ready(function () {
+  $(".preloader-wrapper").fadeOut(() => {
+    $("body").removeClass("preloader-site");
+  });
+});
+
+// 🎵 Background Music Controller
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("music-btn");
+const icon = document.getElementById("music-icon");
+
+let isPlaying = false;
+
+// Fade-in funksiyasi
+function fadeInAudio() {
+  music.muted = false;
+  music.volume = 0;
+  let vol = 0;
+  const fade = setInterval(() => {
+    if (vol < 1) {
+      vol += 0.05;
+      music.volume = Math.min(vol, 1);
+    } else {
+      clearInterval(fade);
+    }
+  }, 200);
 }
 
-// Preloader
-$(document).ready(function($) {
-  $(".preloader-wrapper").fadeOut();
-  $("body").removeClass("preloader-site");
-});
-$(window).load(function() {
-  var Body = $("body");
-  Body.addClass("preloader-site");
+// 🎬 Konvert ochilganda asosiy kontentni ko‘rsatish va musiqa yoqish
+const envelope = document.querySelector(".envelope-wrapper");
+if (envelope) {
+  envelope.addEventListener("click", () => {
+    envelope.classList.toggle("flap");
+
+    // 1.5 sekunddan keyin asosiy sahifani ko‘rsatamiz (animatsiya tugashi uchun)
+    setTimeout(() => {
+      document.getElementById("welcome-screen").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+
+      // Musiqa boshlanadi
+      music.play().then(() => {
+        fadeInAudio();
+        isPlaying = true;
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      }).catch(err => console.log("Autoplay bloklandi:", err));
+    }, 1500);
+  });
+}
+
+// 🎵 Tugma orqali boshqarish
+btn.addEventListener("click", () => {
+  if (isPlaying) {
+    music.pause();
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+  } else {
+    music.play().then(() => fadeInAudio());
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+  }
+  isPlaying = !isPlaying;
 });
